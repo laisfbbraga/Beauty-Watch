@@ -6,7 +6,7 @@
 BeautyAlert is a data pipeline that monitors makeup prices across the leading beauty retail websites in Brazil. It compares prices in real time, sends automatic alerts when a product drops in price, and delivers AI-powered purchase recommendations through a public Streamlit dashboard — so anyone can search for a product and instantly see price history, site comparison, and whether now is a good time to buy.
 
 ---
-## Why BeautyAlert?
+### Why BeautyAlert?
 
 There are general price comparison tools out there — but none focused on the Brazilian beauty market with the depth BeautyAlert offers.
 
@@ -46,7 +46,7 @@ BeautyAlert was built to solve exactly that — one place to search any product,
 
 ---
 
-## Tech Stack
+### Tech Stack
 Layer |	Technology | Status |
 |---|---|---|
 |Data Collection | Python · BeautifulSoup · Playwright | 🔜 Planned|
@@ -60,23 +60,23 @@ Layer |	Technology | Status |
 
 ---
 
-## Architecture
+### Architecture
 
 *(Planned — diagram coming soon)*
 
 ---
 
-## How to Run
+### How to Run
 
 *(Planned — instructions will be added as the project is built)*
 
-## Project Status
+### Project Status
 
 🚧 *Under active development — built as part of a data engineering learning journey.*
 
 
 ---
-## Phases:
+### Phases:
 
 - [ ] Phase 1 — SQL analysis
 - [ ] Phase 2 — Web scraping
