@@ -31,7 +31,7 @@ Este projeto é também a minha jornada prática em engenharia de dados, onde ca
 ### Fonte de dados
 Todos os dados vêm do portal de dados abertos oficial da ANVISA — disponíveis publicamente, sem restrições de uso, atualizados regularmente pelo órgão regulador federal de saúde do Brasil.
 
-- dados.anvisa.gov.br
+- [dados.anvisa.gov.br](https://dados.gov.br/dados/organizacoes/visualizar/agencia-nacional-de-vigilancia-sanitaria-anvisa)
 
 ---
 
