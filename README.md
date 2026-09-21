@@ -1,87 +1,81 @@
-# BeautyAlert
-**Smart makeup price comparison — find the best deal before you buy**
+# BeautyWatch | Vigilante da Beleza
+**Verifique se o cosmético que você usa é aprovado e regularizado pela ANVISA**
 
 
-### What is BeautyAlert?
-BeautyAlert is a data pipeline that monitors makeup prices across the leading beauty retail websites in Brazil. It compares prices in real time, sends automatic alerts when a product drops in price, and delivers AI-powered purchase recommendations through a public Streamlit dashboard — so anyone can search for a product and instantly see price history, site comparison, and whether now is a good time to buy.
+### O que é o BeautyWatch?
+O Vigilante da Beleza é um pipeline de dados que processa os dados abertos oficiais da ANVISA para ajudar consumidores brasileiros a verificar se os cosméticos que usam estão devidamente registrados e aprovados para comercialização no Brasil. Por meio de um dashboard público no Streamlit, qualquer pessoa pode buscar um produto ou marca e ver instantaneamente seu status regulatório, validade do registro e informações de segurança, em linguagem simples, sem precisar navegar pelo portal técnico da ANVISA.
 
 ---
-### Why BeautyAlert?
+### Por que o BeautyWatch?
 
-There are general price comparison tools out there — but none focused on the Brazilian beauty market with the depth BeautyAlert offers.
-
-Feature |General comparators | BeautyAlert|
+Feature |Portal ANVISA | BeautyWatch|
 |---|---|---|
-|Makeup-focused |❌| ✅|
-|Price history |	❌| ✅|
-|Best price across sites|✅| ✅|
-|AI-powered recommendations|❌| ✅|
-|Price drop alerts|❌|✅|
-|National + international brands|❌|	✅|
+|Busca amigável para consumidoras |❌| ✅|
+|Status em linguagem simples |	❌| ✅|
+|Alerta de registro próximo ao vencimento|✅| ✅|
+|Explicação com IA em linguagem acessível|❌| ✅|
+|Interface mobile-friendly|❌|✅|
 
-**One place. Best price. Right time to buy.**
-
+**Uma busca. Saiba o que você está colocando na sua pele.**
 
 ---
 
-### The Problem It Solves 
-As someone who loves beauty and is always hunting for the best deals, I constantly found myself switching between multiple websites trying to figure out: Is this the best price? Has it been cheaper before? Which site should I buy from?
+### O problema que resolve 
+O Brasil é o 4º maior mercado de cosméticos do mundo — mas a maioria das consumidoras nunca verificou se o produto que usa tem registro válido na ANVISA.
 
-BeautyAlert was built to solve exactly that — one place to search any product, see its full price history, compare across sites, and get recommendations that actually make sense. This project is also my hands-on journey into data engineering, where every feature maps to a real technical skill.
+Cosméticos sem registro não passaram pelas avaliações de segurança exigidas por lei e podem conter substâncias proibidas ou ingredientes não avaliados. O Vigilante da Beleza traduz isso em uma busca simples: você digita o produto e sabe na hora se é seguro e aprovado para ser vendido no Brasil.
 
----
-### Monitored Sites
-*(expanding over time)*
-
-- Beleza na Web
-- Sephora Brasil
-- Época Cosméticos
+Este projeto é também a minha jornada prática em engenharia de dados, onde cada funcionalidade representa uma habilidade técnica real.
 
 ---
-### Monitored Brands
-*(expanding over time)*
+### Fonte de dados
+Todos os dados vêm do portal de dados abertos oficial da ANVISA — disponíveis publicamente, sem restrições de uso, atualizados regularmente pelo órgão regulador federal de saúde do Brasil.
 
-**National**: Bruna Tavares · Oceane · Boca Rosa · Mari Maria
-**International (sold in Brazil)**: MAC Cosmetics · Rare Beauty · Fenty Beauty
+- dados.anvisa.gov.br
 
 ---
 
 ### Tech Stack
-Layer |	Technology | Status |
+Camada |	Tecnologia | Status |
 |---|---|---|
-|Data Collection | Python · BeautifulSoup · Playwright | 🔜 Planned|
-|Data Storage |	Google BigQuery · Cloud Storage	| 🔜 Planned|
-|Transformation | dbt | 🔜 Planned|
-|Orchestration | Apache Airflow |🔜 Planned|
-|Cloud |	Google Cloud Platform (GCP)	| 🔜 Planned|
-|AI & Recommendations |	Gemini API · ChromaDB |	🔜 Planned|
-|Frontend |	Streamlit | 🔜 Planned|
-|Version Control | Git · GitHub | ✅ In use|
+|Fonte de dados | ANVISA - dados abertos | ✅ Em uso|
+|Análise exploratória |	Python · Pandas	| ✅ Em uso|
+|Coleta automatizada | Python · Requests (API ANVISA) | 🔜 Planejado|
+|Armazenamento | Google BigQuery · Cloud Storage | 🔜 Planejado|
+|Transformação | dbt |🔜 Planejado|
+|Orquestração |	Apache Airflow	| 🔜 Planejado|
+|Cloud | Gemini API  |	🔜 Planejado|
+|Frontend |	Streamlit | 🔜 Planejado|
+|Version Control | Git · GitHub | ✅ Em uso|
 
 ---
 
-### Architecture
+### Arquitetura
 
-*(Planned — diagram coming soon)*
+*(Planejado — diagrama em breve)*
+
+---
+
+### Como Executar
+
+*(Planejado — instruções serão adicionadas conforme o projeto for construído)*
 
 ---
 
-### How to Run
+### Status do Projeto
 
-*(Planned — instructions will be added as the project is built)*
-
-### Project Status
-
-🚧 *Under active development — built as part of a data engineering learning journey.*
-
+🚧 *Em desenvolvimento ativo — construído como parte de uma jornada de aprendizado em engenharia de dados.*
 
 ---
-### Phases:
+### Fases:
 
-- [ ] Phase 1 — SQL analysis
-- [ ] Phase 2 — Web scraping
-- [ ] Phase 3 — Automated pipeline (Airflow + dbt)
-- [ ] Phase 4 — Cloud deployment (GCP)
-- [ ] Phase 5 — AI recommendations
-- [ ] Phase 5.5 — Streamlit public dashboard
+- [ ] Fase 0 — Git + GitHub e estrutura do repositório
+- [ ] Fase 1 — Python + Requests (API da ANVISA)
+- [ ] Fase 2 — Análise exploratória do dataset ANVISA (Python + Pandas)
+- [ ] Fase 3 — Análise SQL no BigQuery
+- [ ] Fase 4 — Pipelines (Airflow + dbt)
+- [ ] Fase 5 — Deploy na nuvem (GCP)
+- [ ] Fase 6 — Explicações com IA em linguagem simples (Gemini)
+- [ ] Fase 7 — Dashboard público (Streamlit)
+
 
