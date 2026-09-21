@@ -12,7 +12,7 @@ Feature |Portal ANVISA | BeautyWatch|
 |---|---|---|
 |Busca amigável para consumidoras |❌| ✅|
 |Status em linguagem simples |	❌| ✅|
-|Alerta de registro próximo ao vencimento|✅| ✅|
+|Alerta de registro próximo ao vencimento|❌| ✅|
 |Explicação com IA em linguagem acessível|❌| ✅|
 |Interface mobile-friendly|❌|✅|
 
